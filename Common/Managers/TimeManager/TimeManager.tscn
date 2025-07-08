@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://dl4ygkg7kguu6"]
+
+[ext_resource type="Script" uid="uid://dfkp1y6byxwne" path="res://Common/Managers/TimeManager/TimeManager.gd" id="1_qlqg3"]
+[ext_resource type="Gradient" uid="uid://dsxjjrd4d0hg1" path="res://Stages/Overworld/TimePhases.tres" id="2_eqg6j"]
+
+[node name="TimeManager" type="CanvasModulate"]
+script = ExtResource("1_qlqg3")
+time_colors = ExtResource("2_eqg6j")

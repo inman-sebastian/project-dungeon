@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://re2l0bggis4g"]
+
+[ext_resource type="Script" uid="uid://w8ai8sc0upxh" path="res://Stages/Stage.gd" id="1_l4jli"]
+
+[node name="Stage" type="TileMapLayer"]
+script = ExtResource("1_l4jli")
+stage_name = "Overworld"
+metadata/_custom_type_script = "uid://w8ai8sc0upxh"

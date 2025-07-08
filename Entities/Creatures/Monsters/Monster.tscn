@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtk5dbei1cv6j"]
+
+[ext_resource type="Script" uid="uid://dowp8mifj8yiu" path="res://Entities/Creatures/Creature.gd" id="1_bcxy7"]
+
+[node name="Monster" type="CharacterBody2D"]
+script = ExtResource("1_bcxy7")
+metadata/_custom_type_script = "uid://dowp8mifj8yiu"

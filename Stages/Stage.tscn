@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://01lfgxjq7n6f"]
+
+[ext_resource type="TileSet" uid="uid://c7pioeug03k3w" path="res://Common/TileSets/Props.tres" id="1_m2dbm"]
+[ext_resource type="Script" uid="uid://w8ai8sc0upxh" path="res://Stages/Stage.gd" id="1_u70rp"]
+
+[node name="Stage" type="TileMapLayer"]
+tile_set = ExtResource("1_m2dbm")
+script = ExtResource("1_u70rp")

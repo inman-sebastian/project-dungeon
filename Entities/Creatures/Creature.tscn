@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://b16xba84vo414"]
+
+[ext_resource type="Script" uid="uid://dowp8mifj8yiu" path="res://Entities/Creatures/Creature.gd" id="1_0xwgs"]
+[ext_resource type="PackedScene" uid="uid://c0q57064gccx7" path="res://Entities/Entity.tscn" id="1_t1e68"]
+[ext_resource type="PackedScene" uid="uid://bg8q6i2jicqts" path="res://Common/Controllers/Movement/MovementController.tscn" id="2_1y25j"]
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_t1e68"]
+
+[node name="Creature" instance=ExtResource("1_t1e68")]
+script = ExtResource("1_0xwgs")
+display_name = ""
+description = ""
+portrait_image = null
+creature_size = 2
+creature_type = 9
+facing_direction = 1
+movement_speed = 30.0
+understood_languages = Array[int]([2])
+spoken_languages = Array[int]([])
+
+[node name="AnimationTree" type="AnimationTree" parent="Animations" index="1"]
+root_node = NodePath("../..")
+tree_root = SubResource("AnimationNodeStateMachine_t1e68")
+anim_player = NodePath("../AnimationPlayer")
+
+[node name="MovementController" parent="Controllers" index="0" instance=ExtResource("2_1y25j")]

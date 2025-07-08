@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0q57064gccx7"]
+
+[ext_resource type="Script" uid="uid://h38gufl7qhtb" path="res://Entities/Entity.gd" id="1_0p8jp"]
+[ext_resource type="PackedScene" uid="uid://ce0gqlb2w6h2m" path="res://Common/Controllers/Animation/AnimationController.tscn" id="2_y048k"]
+
+[node name="Entity" type="CharacterBody2D"]
+script = ExtResource("1_0p8jp")
+
+[node name="Animations" type="Node2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Animations"]
+root_node = NodePath("../..")
+
+[node name="Sprite" type="Sprite2D" parent="Animations"]
+
+[node name="Controllers" type="Node" parent="."]
+
+[node name="AnimationController" parent="Controllers" instance=ExtResource("2_y048k")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]

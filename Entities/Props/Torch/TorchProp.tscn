@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://8l7olm3t8ghu"]
+
+[ext_resource type="Script" uid="uid://f6qhfinsx2cy" path="res://Entities/Props/Torch/TorchProp.gd" id="1_esdfb"]
+[ext_resource type="SpriteFrames" uid="uid://c82fqrixl7vlv" path="res://Entities/Props/Torch/FlameColorYellow.tres" id="2_ch2mi"]
+[ext_resource type="PackedScene" uid="uid://bsc3l4ledjihk" path="res://Common/Lights/LightMarker/LightMarker.tscn" id="3_esdfb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_esdfb"]
+size = Vector2(8, 6)
+
+[node name="TorchProp" type="StaticBody2D" groups=["Props"]]
+script = ExtResource("1_esdfb")
+prop_name = "Torch"
+metadata/_custom_type_script = "uid://bomuucdivl08x"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -4)
+sprite_frames = ExtResource("2_ch2mi")
+animation = &"lit"
+autoplay = "lit"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_esdfb")
+
+[node name="LightMarker" parent="." instance=ExtResource("3_esdfb")]
+position = Vector2(0, -3.5)

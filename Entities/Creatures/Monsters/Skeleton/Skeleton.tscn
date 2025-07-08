@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cblp383ohg61s"]
+
+[ext_resource type="Script" uid="uid://b7qokh1tq8pgb" path="res://Entities/Creatures/Monsters/Monster.gd" id="1_cvhaa"]
+
+[node name="Skeleton" type="CharacterBody2D"]
+script = ExtResource("1_cvhaa")
+display_name = "Skeleton"
+description = "Skeletons rise at the summons of necromancers and foul spirits. Whether they’re the remains of the ancient dead or fresh bones bound to morbid ambitions, they commit deathless work for whatever forces reanimated them, often serving as guardians, soldiers, or laborers. In rare cases, skeletons are reanimated but given no particular direction."
+creature_type = 13
+damage_vulnerabilities = Array[int]([1])
+metadata/_custom_type_script = "uid://b7qokh1tq8pgb"

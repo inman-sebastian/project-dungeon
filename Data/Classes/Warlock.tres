@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Class" load_steps=2 format=3 uid="uid://onnwqmstvnwu"]
+
+[ext_resource type="Script" uid="uid://dn0hmcg3o3orq" path="res://Common/Resources/Class.gd" id="1_8w1ug"]
+
+[resource]
+script = ExtResource("1_8w1ug")
+name = "Warlock"
+description = ""
+metadata/_custom_type_script = "uid://dn0hmcg3o3orq"

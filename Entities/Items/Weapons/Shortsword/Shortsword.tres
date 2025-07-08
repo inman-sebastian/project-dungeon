@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="WeaponItem" load_steps=2 format=3 uid="uid://c7nu8s4ttg6yd"]
+
+[ext_resource type="Script" uid="uid://dwy7m4gbvd1cv" path="res://Entities/Items/Weapons/WeaponItem.gd" id="1_wujvc"]
+
+[resource]
+script = ExtResource("1_wujvc")
+damage_type = 7
+name = "Shortsword"
+description = ""
+tags = Array[String](["Combat", "Damage"])
+weight = 2.0
+max_stack_size = 1
+metadata/_custom_type_script = "uid://dwy7m4gbvd1cv"
