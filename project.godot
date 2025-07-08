@@ -25,6 +25,8 @@ Direction="*res://Globals/Enums/Direction.gd"
 Language="*res://Globals/Enums/Language.gd"
 TimeOfDay="*res://Globals/Enums/TimeOfDay.gd"
 TimeController="*res://Globals/Controllers/TimeController.gd"
+GameState="*res://Globals/Managers/GameState/GameStateManager.gd"
+Dice="*res://Globals/Systems/Dice/DiceRoller.gd"
 
 [display]
 
